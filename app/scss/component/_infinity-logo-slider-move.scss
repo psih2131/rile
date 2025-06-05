@@ -1,0 +1,80 @@
+//slider for front sec (pages and page builder)
+.infinite-logo-slider {
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative;
+
+    .swiper-container-free-mode>.swiper-wrapper {
+        transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+        // width: 250px;
+        display: inline-flex;
+        width: auto;
+    }
+
+
+    &:before {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 3.92%, #FFF 100%);
+        transform: rotate(180deg);
+        z-index: 100;
+        width: 150px;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        content: "";
+    }
+
+    &:after {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 3.92%, #FFF 100%);
+        z-index: 100;
+        width: 150px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        position: absolute;
+        content: "";
+    }
+}
+
+.infinite-logo-slider__element {
+    // padding: 0 12px;
+}
+
+.infinite-logo-slider__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.infinite-logo-slider__image {
+    width: auto;
+    max-width: 250px;
+    max-height: 100%;
+    display: block;
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    .infinite-logo-slider {
+        &:before {
+            width: 50px;
+        }
+
+        &:after {
+            width: 50px;
+        }
+
+        .swiper-slide {
+            // width: 174px;
+        }
+    }
+
+    .infinite-logo-slider__image {
+        max-width: 100%;
+    }
+}
