@@ -12,6 +12,21 @@
 
 <body>
 	<div class="app">
+
+		<div class="preloader-conteiner">
+			<div class="preloader">
+				<div class="sk-chase">
+					<div class="sk-chase-dot"></div>
+					<div class="sk-chase-dot"></div>
+					<div class="sk-chase-dot"></div>
+					<div class="sk-chase-dot"></div>
+					<div class="sk-chase-dot"></div>
+					<div class="sk-chase-dot"></div>
+				</div>
+				<!-- <img src="img/gif/preloader.gif" alt="" class="preloader-img"> -->
+			</div>
+		</div>
+
 		<header class="header">
 			<div class="container">
 				<a href="" class="header__logo">
@@ -76,12 +91,13 @@
 							</div>
 						</h1>
 						<p class="hero-sec__subtitle">We're the original Verenia team - the creators of the
-							<span><br></span>product that became NetSuite CPQ. <span><br></span><b>Now we support your
+							product that became NetSuite CPQ. <b>Now we support your
 								team
 								directly.</b>
 						</p>
 						<div class="hero-sec__btn-wrapper">
-							<a href="https://cal.com/rile-consultation/45min" class="hero-sec__btn">Book a
+							<a href="https://cal.com/rile-consultation/45min" class="hero-sec__btn btn-anim-hover">Book
+								a
 								Consultation</a>
 						</div>
 					</div>
@@ -161,7 +177,7 @@
 							<img src="img/_src/service-img.jpg" alt="" class="our-services-sec__img">
 							<p class="our-services-sec__img-wrapper-text">Ready to see what we can do for your team?</p>
 							<div class="our-services-sec__img-wrapper-btn-wrapper">
-								<a href="#form" class="our-services-sec__img-wrapper-btn">Get Started</a>
+								<a href="#form" class="our-services-sec__img-wrapper-btn btn-anim-hover">Get Started</a>
 							</div>
 						</div>
 					</div>
@@ -184,7 +200,7 @@
 				</div>
 			</section>
 
-			<section class="why-sec" id="why">
+			<!-- <section class="why-sec" id="why">
 				<div class="container">
 					<div class="why-sec__img-wrapper">
 						<img src="img/_src/why-sec.jpg" alt="" class="why-sec__img">
@@ -244,7 +260,87 @@
 						</div>
 					</div>
 				</div>
+			</section> -->
+
+
+			<section class="why-sec why-sec-v2" id="why">
+				<div class="container">
+					<div class="why-sec__img-wrapper">
+						<div class="why-sec__img-icon">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M20 6L9 17L4 12" stroke="white" stroke-width="3" stroke-linecap="round"
+									stroke-linejoin="round" />
+							</svg>
+
+						</div>
+						<div class="why-sec-v2__video-wrapper">
+							<video muted autoplay loop>
+								<source src="video/demo.mp4" type="video/mp4">
+								Ваш браузер не поддерживает видео.
+							</video>
+						</div>
+						<!-- <img src="img/_src/why-sec.jpg" alt="" class="why-sec__img"> -->
+					</div>
+					<div class="why-sec__content">
+						<div class="why-sec__teg">Built on Expertise</div>
+						<h2 class="why-sec__title">Why Teams Stick<br> With Us</h2>
+						<p class="why-sec__subtitle">We know it inside out.</p>
+						<p class="why-sec__text">Our team built the original CPQ engine at Verenia - the foundation of
+							what NetSuite CPQ is today.</p>
+
+					</div>
+
+					<div class="why-sec__card-wrapper">
+						<div class="why-sec__card-row">
+							<div class="why-sec__card">
+								<div class="why-sec__card-header">
+									<div class="why-sec__card-title">We built this.</div>
+									<div class="why-sec__card-icon">
+										<img src="img/_src/w1.svg" alt="">
+									</div>
+								</div>
+								<div class="why-sec__card-text">Literally. RILE is 100% the original Verenia team
+									behind what is now NetSuite CPQ.</div>
+							</div>
+
+							<div class="why-sec__card">
+								<div class="why-sec__card-header">
+									<div class="why-sec__card-title">Engineer-Led Service</div>
+									<div class="why-sec__card-icon">
+										<img src="img/_src/w2.svg" alt="">
+									</div>
+								</div>
+								<div class="why-sec__card-text">Literally. RILE is 100% the original Verenia team
+									behind what is now NetSuite CPQ.</div>
+							</div>
+
+							<div class="why-sec__card">
+								<div class="why-sec__card-header">
+									<div class="why-sec__card-title">First-Class Support</div>
+									<div class="why-sec__card-icon">
+										<img src="img/_src/w3.svg" alt="">
+									</div>
+								</div>
+								<div class="why-sec__card-text">Literally. RILE is 100% the original Verenia team
+									behind what is now NetSuite CPQ.</div>
+							</div>
+
+							<div class="why-sec__card">
+								<div class="why-sec__card-header">
+									<div class="why-sec__card-title">Flexible Billing</div>
+									<div class="why-sec__card-icon">
+										<img src="img/_src/w4.svg" alt="">
+									</div>
+								</div>
+								<div class="why-sec__card-text">Literally. RILE is 100% the original Verenia team
+									behind what is now NetSuite CPQ.</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
+
 
 			<section class="our-partners-sec">
 				<div class="container">
@@ -450,7 +546,7 @@
 				<div class="container">
 					<p class="our-partners-sec__down-title">Your team next?</p>
 					<div class="our-partners-sec__down-btn-row">
-						<a href="#form" class="our-partners-sec__btn">Let’s Talk</a>
+						<a href="#form" class="our-partners-sec__btn btn-anim-hover">Let’s Talk</a>
 					</div>
 				</div>
 			</section>
@@ -662,7 +758,8 @@
 					<div class="consultation-sec__down-text"><b>Our goal is simple: make sure you're getting the
 							most</b><br>out of the system you've invested in. </div>
 					<div class="consultation-sec__btn-wrapper">
-						<a href="https://cal.com/rile-consultation/45min" class="consultation-sec__btn">Book a Time</a>
+						<a href="https://cal.com/rile-consultation/45min"
+							class="consultation-sec__btn btn-anim-hover">Book a Time</a>
 					</div>
 				</div>
 			</section>
@@ -714,7 +811,7 @@
 							</div>
 						</div>
 						<div class="form-sec__btn-wrap">
-							<input type="submit" value="Send">
+							<input type="submit" class="btn-anim-hover" value="Send">
 						</div>
 					</form>
 				</div>

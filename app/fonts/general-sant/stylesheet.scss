@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('GeneralSans-Semibold.otf') format('opentype');
+    font-weight: 600;
+    /* или normal, если не уверен */
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('GeneralSans-Regular.otf') format('opentype');
+    font-weight: 400;
+    /* или normal, если не уверен */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('GeneralSans-Bold.otf') format('opentype');
+    font-weight: 700;
+    /* или normal, если не уверен */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('GeneralSans-Medium.otf') format('opentype');
+    font-weight: 500;
+    /* или normal, если не уверен */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('GeneralSans-Light.otf') format('opentype');
+    font-weight: 300;
+    /* или normal, если не уверен */
+    font-style: normal;
+}

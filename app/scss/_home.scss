@@ -34,11 +34,11 @@
 .hero-sec__title {
     color: #343436;
 
-    font-family: 'General Sans';
-    font-size: 79.55px;
+    font-family: $titleFont;
+    font-size: 80px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
+    line-height: 110%;
 
     span {
         color: #fff;
@@ -57,14 +57,15 @@
 }
 
 .hero-sec__subtitle {
-    margin-top: 6px;
-    color: #343436;
-    font-size: 22px;
+    margin-top: 30px;
+    color: #374151;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    margin-bottom: 27px;
+    margin-bottom: 40px;
     line-height: 1.4;
+    max-width: 672px;
 
     b {
         font-weight: 600;
@@ -74,7 +75,7 @@
 
 
 .hero-sec__btn {
-    background: #6B46FF;
+    // background: #6B46FF;
     padding: 15px 24px;
     color: #FFF;
     font-size: 16px;
@@ -83,6 +84,71 @@
     line-height: normal;
     border-radius: 100px;
     display: inline-block;
+    // position: relative;
+    // overflow: hidden;
+    // transition: all ease 0.5s;
+    // background: linear-gradient(90deg, #2662EB 0%, #2662EB 100%);
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 0;
+    //     height: 100%;
+    //     width: 1px;
+    //     box-shadow: 0px 0px 71px 23px rgba(255, 255, 255, 0.83);
+    //     /* Блик: белый цвет с небольшим затемнением */
+    //     transform: translateX(-50px);
+    //     /* Изначально скрыть блик */
+    //     transition: transform 0.5s ease-in-out;
+    // }
+
+    // &:hover {
+    //     transform: scale(1.1);
+    //     transition: all ease 0.5s;
+    //     background: linear-gradient(90deg, #9034EA 0%, #2662EB 100%);
+
+    //     &::before {
+    //         transform: translateX(250px);
+    //         /* При наведении - показать блик */
+    //     }
+    // }
+}
+
+.btn-anim-hover {
+
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all ease 0.5s;
+    background: linear-gradient(90deg, #2662EB 0%, #2662EB 100%);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        width: 1px;
+        box-shadow: 0px 0px 71px 23px rgba(255, 255, 255, 0.83);
+        /* Блик: белый цвет с небольшим затемнением */
+        transform: translateX(-50px);
+        /* Изначально скрыть блик */
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: all ease 0.5s;
+        background: linear-gradient(90deg, #9034EA 0%, #2662EB 100%);
+
+        &::before {
+            transform: translateX(250px);
+            /* При наведении - показать блик */
+        }
+    }
 }
 
 .hero-sec__bg-line-wrapper {
@@ -152,10 +218,10 @@
 
 .our-services-sec__title {
     color: #343436;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 48px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
 }
 
@@ -181,7 +247,7 @@
     box-shadow: 5px 7px 17.3px rgba(0, 0, 0, 0.10);
     width: calc(50% - 15px);
     margin-top: 30px;
-    padding: 22px 34px 40px 22px;
+    padding: 20px;
     border-radius: 20px;
 }
 
@@ -201,10 +267,10 @@
 
 .our-services-sec__advantage-title {
     color: #000;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 20px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     margin-top: 12px;
     line-height: normal;
 }
@@ -214,6 +280,7 @@
     color: #485669;
     font-size: 16px;
     font-style: normal;
+    line-height: 1.5;
     font-weight: 500;
     line-height: normal;
 }
@@ -255,7 +322,6 @@
     padding: 12px 32px;
     border-radius: 100px;
     border: none;
-    background: #6B46FF;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -317,7 +383,7 @@
 .why-sec__title {
     margin-top: 10px;
     color: #FFF;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 48.883px;
     font-style: normal;
     font-weight: 600;
@@ -371,7 +437,7 @@
 
 .why-sec__card-title {
     color: #343436;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -418,7 +484,7 @@
 .our-partners-sec__title {
     width: 100%;
     color: #343436;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 44px;
     font-style: normal;
     font-weight: 600;
@@ -433,19 +499,21 @@
 }
 
 .our-partners-sec__subtitle {
+    margin: 0 auto;
     text-align: center;
-    color: #343436;
-    font-size: 16px;
+    color: rgb(75, 85, 99);
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
-    margin-top: 7px;
+    max-width: 672px;
+    margin-top: 15px;
 }
 
 .our-partners-sec__logo-slider-wrapper {
 
     .infinite-logo-slider {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 }
 
@@ -471,7 +539,7 @@
     cursor: pointer;
     border: none;
     color: #FFF;
-    background: #6B46FF;
+
     border-radius: 100px;
     font-size: 22px;
     font-style: normal;
@@ -483,10 +551,15 @@
 .team-sec {
     background: #fff;
     padding-bottom: 80px;
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
 }
 
 .team-sec__claster {
-    width: 960px;
+    width: 100%;
     margin: 0 auto;
     border-radius: 25px;
     background: #F2F2F2;
@@ -516,7 +589,7 @@
     margin-top: 20px;
     text-align: center;
     color: #343436;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 44px;
     font-style: normal;
     font-weight: 600;
@@ -531,19 +604,19 @@
 }
 
 .team-sec__team-element {
-    width: 166px;
-    margin: 0 3px;
+    width: 176px;
+    margin: 0 7px;
 
     &:nth-child(even) {
         .team-sec__img {
-            height: 194px;
+            height: 215px;
         }
     }
 }
 
 .team-sec__img {
     width: 100%;
-    height: 166px;
+    height: 176px;
     border-radius: 20px;
     display: block;
     object-fit: cover;
@@ -553,7 +626,7 @@
     margin-top: 12px;
     color: #343436;
 
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -612,7 +685,7 @@
 
 .questions-sec__title {
     color: #343436;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 48.883px;
     font-style: normal;
     font-weight: 600;
@@ -751,7 +824,7 @@
 .consultation-sec__title {
     color: #F2F2F2;
     width: 400px;
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 48.883px;
     font-style: normal;
     font-weight: 600;
@@ -778,7 +851,7 @@
 .consultation-sec__get-title {
     color: #F2F2F2;
 
-    font-family: "General Sans";
+    font-family: $titleFont;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -842,7 +915,6 @@
 }
 
 .consultation-sec__btn {
-    background: #6B46FF;
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -964,7 +1036,7 @@
     bottom: 22px;
 
     input {
-        background: #7D5EFF;
+        // background: #7D5EFF;
         color: #FFF;
         font-size: 22px;
         font-style: normal;
@@ -977,6 +1049,146 @@
         border-radius: 100px;
     }
 }
+
+.why-sec-v2 {
+    .container {
+        flex-wrap: wrap;
+        width: 1220px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .why-sec__card-wrapper {
+        width: 100%;
+    }
+
+    .why-sec__card-row {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .why-sec__card {
+        width: calc(25% - 19px);
+        min-width: 0;
+        padding: 20px;
+        margin: 0;
+        transition: all ease 0.3s;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+
+
+        &:hover {
+            transform: translateY(-15px);
+            transition: all ease 0.3s;
+        }
+    }
+
+    .why-sec__card-title {
+        font-size: 18px;
+        width: calc(100% - 40px);
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        padding-right: 10px;
+        line-height: 1.2;
+    }
+
+    .why-sec__card-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #6B46FF;
+
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+
+    .why-sec__card-header {
+        align-items: center;
+    }
+
+    .why-sec__card-text {
+        color: rgb(75, 85, 99);
+        font-weight: 400;
+        margin-top: 20px;
+    }
+
+    .why-sec__img-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        height: auto;
+        padding-right: 13px;
+    }
+
+    .why-sec-v2__video-wrapper {
+        width: 377px;
+        height: 377px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+
+    .why-sec__content {
+        width: 50%;
+        padding-left: 30px;
+    }
+
+    .why-sec__img-icon {
+        width: 56px;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        border-radius: 100px;
+        background: #23C45F;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        svg {
+            display: block;
+
+
+        }
+    }
+
+    .why-sec__subtitle {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #ffffffe6;
+    }
+
+    .why-sec__text {
+        font-size: 20px;
+        color: #ffffffe6;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1200px) {
     .hero-sec__bg-line-wrapper {
@@ -1174,6 +1386,43 @@
 
     .form-sec form {
         width: 100%;
+    }
+
+    .why-sec-v2 .container {
+        width: 750px;
+    }
+
+    .why-sec-v2 .why-sec__card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .why-sec-v2 .why-sec__img-icon {
+        display: none;
+    }
+
+    .why-sec-v2 .why-sec-v2__video-wrapper {
+        width: 100%;
+        height: 300px;
+    }
+
+    .why-sec-v2 .why-sec__subtitle {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .why-sec-v2 .why-sec__text {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .team-sec .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .team-sec__team-element:nth-child(even) .team-sec__img {
+        height: 176px;
     }
 }
 
@@ -1459,5 +1708,57 @@
 
     .form-sec .line-wrapper {
         display: none;
+    }
+
+    .why-sec-v2 .container {
+        width: 350px;
+    }
+
+    .why-sec-v2 .why-sec__img-wrapper {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
+
+    .why-sec-v2 .why-sec__content {
+        width: 100%;
+        order: 0;
+        padding-left: 0;
+    }
+
+    .why-sec-v2 .why-sec__subtitle {
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+
+    .why-sec-v2 .why-sec__text {
+        font-size: 16px;
+    }
+
+    .why-sec-v2 .why-sec__card {
+        width: 100%;
+    }
+
+    .why-sec-v2 .why-sec-v2__video-wrapper {
+        width: 100%;
+        height: 240px;
+    }
+
+    .our-partners-sec__logo-slider-wrapper .infinite-logo-slider {
+        margin-top: 50px;
+    }
+
+    .infinite-logo-slider__image-wrapper {
+        height: 35px;
+    }
+
+    .team-sec__team-element {
+        margin-left: 0;
+        margin-right: 0;
+        width: calc(50% - 5px);
+    }
+
+    .team-sec__team-element:nth-child(even) .team-sec__img {
+        height: 176px;
     }
 }
