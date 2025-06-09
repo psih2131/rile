@@ -95,57 +95,57 @@ window.addEventListener('load', function () {
     // Create a media condition that targets viewports at least 768px wide
     const mediaQuery = window.matchMedia('(min-width: 1200px)')
     // Check if the media query is true
-    // if (mediaQuery.matches) {
-    //     let containerSec = document.querySelector('.why-sec')
-    //     let imgElement = document.querySelector('.why-sec__img')
-    //     let cardsRow = document.querySelector('.why-sec__card-row')
+    if (mediaQuery.matches) {
+        let containerSec = document.querySelector('.why-sec')
+        let imgElement = document.querySelector('.why-sec-v2__video-wrapper video')
+        let cardsRow = document.querySelector('.why-sec__card-row')
 
-    //     let containerSecHeight = containerSec.clientHeight
-    //     let fronStartBrowserToSecRange = containerSec.offsetTop
+        let containerSecHeight = containerSec.clientHeight
+        let fronStartBrowserToSecRange = containerSec.offsetTop
 
-    //     let currentScrollValue = window.scrollY
+        let currentScrollValue = window.scrollY
 
-    //     console.log('windows height', window.innerHeight)
-    //     // console.log('ff', +fronStartBrowserToSecRange - ((window.innerHeight - containerSecHeight) + containerSecHeight))
+        console.log('windows height', window.innerHeight)
+        // console.log('ff', +fronStartBrowserToSecRange - ((window.innerHeight - containerSecHeight) + containerSecHeight))
 
-    //     let valueScrollForStartAnim = +fronStartBrowserToSecRange - ((window.innerHeight - containerSecHeight) + 500)
-    //     let valueScrollForEndAnim = +fronStartBrowserToSecRange - 200
+        let valueScrollForStartAnim = +fronStartBrowserToSecRange - ((window.innerHeight - containerSecHeight) + 500)
+        let valueScrollForEndAnim = +fronStartBrowserToSecRange - 200
 
-    //     let procentProgressScroll = 0
+        let procentProgressScroll = 0
 
-    //     console.log('scroll value', currentScrollValue)
-    //     console.log('containerSecHeight', containerSecHeight)
-    //     console.log('fronStartBrowserToSecRange', fronStartBrowserToSecRange)
+        console.log('scroll value', currentScrollValue)
+        console.log('containerSecHeight', containerSecHeight)
+        console.log('fronStartBrowserToSecRange', fronStartBrowserToSecRange)
 
-    //     console.log('valueScrollForStartAnim', valueScrollForStartAnim)
+        console.log('valueScrollForStartAnim', valueScrollForStartAnim)
 
-    //     window.addEventListener('scroll', function () {
-    //         currentScrollValue = window.scrollY
-    //         console.log('scroll value', currentScrollValue)
+        window.addEventListener('scroll', function () {
+            currentScrollValue = window.scrollY
+            console.log('scroll value', currentScrollValue)
 
-    //         if (currentScrollValue < valueScrollForStartAnim) {
-    //             procentProgressScroll = 0
-    //         }
+            if (currentScrollValue < valueScrollForStartAnim) {
+                procentProgressScroll = 0
+            }
 
-    //         if (currentScrollValue >= valueScrollForStartAnim && currentScrollValue < valueScrollForEndAnim) {
-    //             let currentValueScrolIncide = currentScrollValue - valueScrollForStartAnim
-    //             let fullRangeValue = valueScrollForEndAnim - valueScrollForStartAnim
-    //             let currentProcent = (currentValueScrolIncide / fullRangeValue)
-    //             console.log('start anim', currentProcent, currentValueScrolIncide)
-    //             procentProgressScroll = currentProcent
-    //         }
+            if (currentScrollValue >= valueScrollForStartAnim && currentScrollValue < valueScrollForEndAnim) {
+                let currentValueScrolIncide = currentScrollValue - valueScrollForStartAnim
+                let fullRangeValue = valueScrollForEndAnim - valueScrollForStartAnim
+                let currentProcent = (currentValueScrolIncide / fullRangeValue)
+                console.log('start anim', currentProcent, currentValueScrolIncide)
+                procentProgressScroll = currentProcent
+            }
 
-    //         if (currentScrollValue > valueScrollForEndAnim) {
-    //             procentProgressScroll = 1
-    //         }
+            if (currentScrollValue > valueScrollForEndAnim) {
+                procentProgressScroll = 1
+            }
 
-    //         cardsRow.style.marginLeft = - ((970 * procentProgressScroll)) + 'px'
+            // cardsRow.style.marginLeft = - ((970 * procentProgressScroll)) + 'px'
 
-    //         imgElement.style.width = 100 - ((procentProgressScroll * 100) / 2) + '%'
-    //         imgElement.style.height = 100 - ((procentProgressScroll * 100) / 2) + '%'
+            imgElement.style.width = 100 - ((procentProgressScroll * 100) / 3) + '%'
+            imgElement.style.height = 100 - ((procentProgressScroll * 100) / 3) + '%'
 
-    //     })
-    // }
+        })
+    }
 
 
 
@@ -340,20 +340,20 @@ function animateController() {
             animation: "fadeInUp"
         })
 
-        .add(".hero-sec__title", {
-            delay: 100,
+        .add(".hero-sec__text", {
+            delay: 500,
             duration: 700,
             animation: "fadeInUp"
         })
 
         .add(".hero-sec__subtitle ", {
-            delay: 100,
+            delay: 600,
             duration: 700,
             animation: "fadeInUp"
         })
 
         .add(".hero-sec__btn-wrapper ", {
-            delay: 100,
+            delay: 700,
             duration: 700,
             animation: "fadeInUp"
         })
@@ -364,16 +364,36 @@ function animateController() {
             animation: "fadeInUp"
         })
 
-        .add(".why-sec-v2__video-wrapper", {
-            delay: 100,
-            duration: 1000,
-            animation: "fadeInUp"
-        })
+        // .add(".why-sec-v2__video-wrapper", {
+        //     delay: 100,
+        //     duration: 1000,
+        //     animation: "fadeInUp"
+        // })
 
         .add(".why-sec__card", {
             delay: 100,
             duration: 700,
             animation: "fadeInUp"
+        })
+
+
+
+        .add(".js1", {
+            delay: 1000,
+            duration: 1000,
+            animation: "rotate90"
+        })
+
+        .add(".js2", {
+            delay: 1200,
+            duration: 1000,
+            animation: "flipInY"
+        })
+
+        .add(".js3", {
+            delay: 1400,
+            duration: 1000,
+            animation: "zoomIn"
         })
 
 

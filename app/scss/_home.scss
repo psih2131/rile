@@ -243,12 +243,29 @@
 
 .our-services-sec__advantage {
     background: #F2F2F2;
-    border: solid 1px #fff;
+    border: solid 2px #fff;
     box-shadow: 5px 7px 17.3px rgba(0, 0, 0, 0.10);
     width: calc(50% - 15px);
     margin-top: 30px;
     padding: 20px;
     border-radius: 20px;
+
+    &:hover {
+        border: solid 2px #6B46FF;
+        box-shadow: 10px 7px 25.3px rgba(0, 0, 0, 0.15);
+        transform: scale(1.05) translateY(-10px) !important;
+        transition: all ease 0.5s !important;
+
+        .our-services-sec__advantage-title {
+            color: #6B46FF;
+            transition: all ease 0.5s;
+        }
+
+        .our-services-sec__advantage-icon {
+            transform: translateY(-15px) rotate(25deg);
+            transition: all ease 0.5s;
+        }
+    }
 }
 
 .our-services-sec__advantage-img-wrapper {
@@ -262,6 +279,7 @@
 .our-services-sec__advantage-icon {
     max-width: 100%;
     max-height: 100%;
+    transition: all ease 0.5s;
     display: block;
 }
 
@@ -273,6 +291,7 @@
     font-weight: 500;
     margin-top: 12px;
     line-height: normal;
+    transition: all ease 0.5s;
 }
 
 .our-services-sec__advantage-text {
@@ -299,6 +318,12 @@
     object-fit: cover;
     border-radius: 15px;
     display: block;
+    transition: all ease 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all ease 0.5s;
+    }
 }
 
 .our-services-sec__img-wrapper-text {
@@ -347,7 +372,7 @@
     width: 494px;
     height: 494px;
     border-radius: 15px;
-    overflow: hidden;
+
     position: relative;
     z-index: 1;
     display: flex;
@@ -409,7 +434,7 @@
 }
 
 .why-sec__card-wrapper {
-    margin-top: 52px;
+    margin-top: 142px;
     width: 100%;
     position: relative;
 }
@@ -427,6 +452,11 @@
     border: solid 2px #F2F2F2;
     border-radius: 15px;
     padding: 27px 22px 34px 22px;
+
+    &:hover {
+        transform: translateY(-15px) !important;
+        transition: all ease 0.5s !important;
+    }
 }
 
 .why-sec__card-header {
@@ -607,11 +637,13 @@
     width: 176px;
     margin: 0 7px;
 
+
     &:nth-child(even) {
         .team-sec__img {
             height: 215px;
         }
     }
+
 }
 
 .team-sec__img {
@@ -620,6 +652,12 @@
     border-radius: 20px;
     display: block;
     object-fit: cover;
+    transition: all ease 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all ease 0.5s;
+    }
 }
 
 .team-sec__team-element-title {
@@ -717,11 +755,31 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+
 }
 
 .questions-sec__question-header {
     display: flex;
     align-items: center;
+
+    &:hover {
+        .questions-sec__question-title {
+            color: #6B46FF;
+            transition: all ease 0.3s;
+        }
+
+        .questions-sec__question-icon-wrapper {
+            background: #6B46FF;
+            transition: all ease 0.3s;
+
+
+        }
+
+        .ssad {
+            background: #fff;
+        }
+    }
 }
 
 .questions-sec__question-icon-wrapper {
@@ -761,12 +819,14 @@
 
 .questions-sec__question-title {
     width: calc(100% - 36px);
+    transition: all ease 0.3s;
     padding-left: 15px;
     color: #343436;
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    cursor: pointer;
 }
 
 .questions-sec__question-body-text {
@@ -874,6 +934,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+
+    &:hover {
+        transform: translateY(-10px) !important;
+        transition: all ease 0.3s !important;
+    }
 }
 
 .consultation-sec__get-element-icon {
@@ -1002,11 +1067,15 @@
         border-radius: 100px;
         width: 100%;
         padding: 13px 30px;
-        color: #485669;
+        color: #869AB6;
         font-size: 18px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
+
+        &::placeholder {
+            color: #869AB6;
+        }
     }
 }
 
@@ -1018,14 +1087,18 @@
         border-radius: 15px;
         width: 100%;
         padding: 13px 30px;
-        color: #485669;
+        color: #000;
         font-size: 18px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
         height: 323px;
         padding: 25px;
         resize: none;
+
+        &::placeholder {
+            color: #869AB6;
+        }
     }
 }
 
@@ -1060,6 +1133,8 @@
 
     .why-sec__card-wrapper {
         width: 100%;
+        position: relative;
+        z-index: 10;
     }
 
     .why-sec__card-row {
@@ -1119,22 +1194,35 @@
     .why-sec__img-wrapper {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: calc(50% - 10px);
         height: auto;
         padding-right: 13px;
     }
 
     .why-sec-v2__video-wrapper {
-        width: 377px;
-        height: 377px;
+        width: 580px;
+        height: 580px;
         border-radius: 10px;
-        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        display: flex;
+        justify-content: flex-end;
 
         video {
             width: 100%;
             height: 100%;
             object-fit: cover;
             display: block;
+            transition: all ease 0.7s;
+            border-radius: 10px;
+        }
+
+        .why-sec-v2__video-wrapper-cont {
+            width: 100%;
+            height: 100%;
+
         }
     }
 
@@ -1176,7 +1264,17 @@
 
 }
 
+.hero-sec__text {
+    display: inline;
+}
 
+.why-sec-v2 .why-sec__img-wrapper {
+    height: 380px;
+}
+
+.why-sec-v2 .why-sec__card-wrapper {
+    margin-top: 60px;
+}
 
 
 
@@ -1193,6 +1291,10 @@
 @media only screen and (max-width: 1200px) {
     .hero-sec__bg-line-wrapper {
         left: -100px;
+    }
+
+    .why-sec-v2 .why-sec__img-wrapper {
+        height: auto;
     }
 
     .hero-sec__text-wrapper {
@@ -1424,6 +1526,14 @@
     .team-sec__team-element:nth-child(even) .team-sec__img {
         height: 176px;
     }
+
+    .why-sec-v2 .why-sec-v2__video-wrapper {
+        position: relative;
+    }
+
+    .why-sec-v2 .why-sec__card-wrapper {
+        margin-top: 30px;
+    }
 }
 
 
@@ -1435,25 +1545,48 @@
         padding-left: 0;
         padding-right: 0;
         padding-top: 52px;
+        padding-left: 55px;
+        display: flex;
+        align-items: center;
 
     }
 
     .hero-sec__title {
-        font-size: 34px;
+        font-size: 52px;
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
 
         svg {
-            width: 24px;
-            margin-right: 10px;
+            width: 40px;
+            margin-right: 15px;
         }
+
+
+    }
+
+    .hero-sec__title-svg-wrapper {
+        order: 0;
+        width: 100%;
+        margin-left: 0;
+        padding-bottom: 5px;
+    }
+
+    .hero-sec__text {
+        order: 1;
     }
 
     .hero-sec__subtitle {
-        font-size: 16px;
-        margin-top: 10px;
+        font-size: 20px;
+        margin-top: 20px;
 
         span {
             display: none;
         }
+    }
+
+    .hero-sec .hero-sec__down-text {
+        display: none;
     }
 
     .hero-sec {
@@ -1461,7 +1594,7 @@
     }
 
     .hero-sec__text-wrapper {
-        margin-top: -100px;
+        margin-top: 0;
     }
 
     .our-services-sec .container {
@@ -1759,6 +1892,12 @@
     }
 
     .team-sec__team-element:nth-child(even) .team-sec__img {
-        height: 176px;
+        height: 194px;
     }
+
+    .team-sec__img {
+        height: 166px;
+    }
+
+
 }
