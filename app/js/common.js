@@ -23,7 +23,7 @@ $(function () {
 
     $('.questions-sec__question-header').on('click', function () {
         $(this).closest('.questions-sec__question').toggleClass('questions-sec__question--activ')
-        $(this).closest('.questions-sec__question').find('.questions-sec__question-body').slideToggle(500)
+        $(this).closest('.questions-sec__question').find('.questions-sec__question-body').slideToggle(200)
     })
 
 });
@@ -85,7 +85,7 @@ window.addEventListener('load', function () {
             allowTouchMove: false,
         };
 
-        let swiper = new Swiper(".infinite-logo-slider--reverce .swiper-container", swiperOptions);
+        let swiper2 = new Swiper(".infinite-logo-slider--reverce .swiper-container", swiperOptions);
     }
 
 
@@ -209,17 +209,17 @@ function animateController() {
             animation: "fadeInUp"
         })
 
-        .add(".infinite-logo-slider--main", {
-            delay: 100,
-            duration: 1000,
-            animation: "fadeInRight"
-        })
+        // .add(".infinite-logo-slider--main", {
+        //     delay: 100,
+        //     duration: 1000,
+        //     animation: "fadeInRight"
+        // })
 
-        .add(".infinite-logo-slider--reverce", {
-            delay: 100,
-            duration: 2000,
-            animation: "fadeInLeft"
-        })
+        // .add(".infinite-logo-slider--reverce", {
+        //     delay: 100,
+        //     duration: 2000,
+        //     animation: "fadeInLeft"
+        // })
 
         .add(".our-partners-sec__down-title", {
             delay: 100,
@@ -259,7 +259,7 @@ function animateController() {
         })
         .add(".questions-sec__question ", {
             delay: 100,
-            duration: 1000,
+            duration: 500,
             animation: "fadeInUp"
         })
 
