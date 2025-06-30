@@ -24,6 +24,7 @@ $(function () {
     $('.questions-sec__question-header').on('click', function () {
         $(this).closest('.questions-sec__question').toggleClass('questions-sec__question--activ')
         $(this).closest('.questions-sec__question').find('.questions-sec__question-body').slideToggle(200)
+        $(this).closest('.questions-sec__question').find('.questions-sec__question-body-text').toggleClass('questions-sec__question-body-text--activ')
     })
 
 });
