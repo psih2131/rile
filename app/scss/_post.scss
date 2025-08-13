@@ -1,0 +1,148 @@
+.post-sec {
+    .container {
+        position: relative;
+        min-height: calc(100vh - 98px);
+        padding-top: 224px;
+        padding-bottom: 120px;
+    }
+
+    .hero-sec__bg-line {
+        background: #fff;
+    }
+}
+
+.post-sec__wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.post-sec__title {
+    font-family: $titleFont;
+    font-weight: 600;
+    font-size: 45.29px;
+    line-height: 54px;
+    letter-spacing: 0%;
+    margin-bottom: 36px;
+
+}
+
+.post-sec__post-editor {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: $titleFont;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+
+    }
+
+    h1,
+    h2 {
+        font-size: 45px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+    }
+
+    b,
+    strong {
+        font-weight: 600;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    ul {
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        li {
+            list-style-type: disc;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+
+    ol {
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        li {
+            list-style-type: decimal;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .post-sec .container {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    .post-sec__title {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+
+    .post-sec__post-editor {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: $titleFont;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0%;
+            margin-bottom: 20px;
+
+        }
+
+        h1,
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 24px;
+        }
+
+        h5 {
+            font-size: 20px;
+        }
+
+
+    }
+}

@@ -103,6 +103,12 @@
     }
 }
 
+@media only screen and (max-width: 1200px) {
+    .header__list-element {
+        margin: 0 10px;
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .header__nav {
         display: none;
@@ -115,7 +121,5 @@
     .header__logo {
         width: 100px;
     }
-
-
 
 }
